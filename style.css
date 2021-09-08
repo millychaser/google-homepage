@@ -4,37 +4,31 @@
 .container {
     display: flex;
     flex-direction: column;
-    background-color: blue;
     height: 100%;
     
 }
 
 .spacer {
     flex-grow: 1;
-    background-color: red;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 .logo {
-    background-color: pink;
     text-align: center;
 }
 
 .logo img {
     height: 8em;
-    background-color:slateblue;
 }
 
 .searchbox {
-    background-color: green;
     text-align: center;
     padding: 1.5em;
 }
 
 .searchbox .inpSearch {
-    
     background: url("/assets/searchIcon.png");
     background-position: left;
     background-position-x: 1em;
@@ -44,19 +38,31 @@
     padding-left: 3em;
     width: 32em;
     border-radius: 1rem;
+    border: 1px solid #dadada;
 }
 
 .searchbuttons {
-    background-color:skyblue;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
+}
+
+.searchbuttons button {
+    margin: 0 .5em 0 .5em;
+    border-radius: 0;
+    padding: .5em;
+    border: none;
+}
+
+.searchbuttons button:hover {
+    border-color: black;
+    padding: .4em;
+    border: .1em solid;
 }
 
 .nav {
     display: flex;
     flex-direction: row;
-    background-color: #d2d2d2;
     padding: 1em;
 }
 
